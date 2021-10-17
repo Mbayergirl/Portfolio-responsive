@@ -86,6 +86,14 @@ p {
   height: auto;
 }
 
+.upper {
+  padding-top: 90px;
+}
+
+.lower {
+  padding-top: 130px;
+}
+
 @media (max-width: 900px) {
   .project-description {
     padding: 0;
