@@ -4,7 +4,7 @@ font-family: 'Poppins', sans-serif;*/
 
 :root {
   --branding-color: #6c63ff;
-  --secondary-color: #f9f7fe;
+  --secondary-color: #bbe4e9;
   --heading-font-family: " Playfair Display ", serif;
   --default-font-family: "Poppins", sans-serif;
 }
@@ -87,11 +87,15 @@ p {
 }
 
 .upper {
-  padding-top: 90px;
+  padding: 50px;
 }
 
 .lower {
-  padding-top: 130px;
+  padding: 110px 50px;
+}
+
+.col-6 {
+  background: var(--secondary-color);
 }
 
 @media (max-width: 900px) {
