@@ -4,7 +4,8 @@ font-family: 'Poppins', sans-serif;*/
 
 :root {
   --branding-color: #6c63ff;
-  --secondary-color: #bbe4e9;
+  --secondary-color: #b5ebec;
+
   --heading-font-family: " Playfair Display ", serif;
   --default-font-family: "Poppins", sans-serif;
 }
@@ -40,9 +41,28 @@ p {
 }
 
 .hero {
-  background: var(--secondary-color);
+  background: linear-gradient(
+    89.2deg,
+    rgb(191, 241, 236) 22.3%,
+    rgb(109, 192, 236) 84.1%
+  );
+  background-size: 400% 400%;
+  animation: gradient 7s ease infinite;
+
   text-align: center;
   padding: 160px 20px;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .hero p {
@@ -57,6 +77,24 @@ p {
   font-weight: normal;
   line-height: 1.5;
   font-size: 24px;
+}
+
+.about-section {
+  padding: 160px 20px;
+}
+
+.about-section h1 {
+  font-size: 64px;
+  line-height: 80px;
+}
+
+.about-section h2 {
+  font-size: 18px;
+  font-family: var(--default-font-family);
+}
+
+.about-section-content {
+  margin: 30px;
 }
 
 .btn-branding {
@@ -106,6 +144,12 @@ p {
   .hero {
     padding: 80px 20px;
   }
+
+  .about-section {
+    text-align: center;
+    padding: 0;
+  }
+
   h1 {
     font-size: 44px;
     line-height: 2;
